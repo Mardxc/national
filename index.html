@@ -11,6 +11,10 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"
+    />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.js"
       integrity="sha512-klc+qN5PPscoGxSzFpetVsCr9sryi2e2vHwZKq43FdFyhSAa7vAqog/Ifl8tzg/8mBZiG2MAKhyjH5oPJp65EA=="
@@ -21,12 +25,51 @@
   </head>
   <body ng-app="app">
     <div ng-controller="AppController as appCtrl">
-      <header class="hero">
-        <div class="textos-hero">
-          <h1>Bienvenido a Website</h1>
-          <p>Creamos el mejor sitio web para ti</p>
+      <section class="hero">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+          <img
+            src="img/national/logo-national-2.webp"
+            class="img-fluid mx-5"
+            alt=""
+          />
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+            <form class="form-inline my-2 my-lg-0">
+              <button class="btn btn-link my-2 my-sm-0 text-dark" type="submit">
+                <i class="fi fi-us" aria-hidden="true"></i>
+                ENGLISH
+              </button>
+              <button class="btn btn-link my-2 my-sm-0 text-dark" type="submit">
+                <i class="fi fi-mx" aria-hidden="true"></i>
+                ESPAÑOL
+              </button>
+            </form>
+          </div>
+        </nav>
+        <div class="card mx-auto">
+          <div class="card-body">
+            <h1>INCREASE YOUR EARNINGS</h1>
+            <h2>HAULING WITH US</h2>
+            <p>
+              2,500+ hauling opportunitiess a week.
+              <br />
+              Earn up tp 92.9% of each Load, Apply in minutes.
+            </p>
+            <p>Join National Resources today!</p>
+          </div>
         </div>
-      </header>
+      </section>
     </div>
   </body>
   <script src="js/app.js"></script>

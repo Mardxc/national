@@ -6,6 +6,29 @@
   --text-title-color: #1e402d;
   --text-texts-color: #353535;
 }
+@font-face {
+  font-family: "SF Pro";
+  src: url("fonts/SF-Pro-Display-Black.otf");
+  src: url("fonts/SF-Pro-Display-Bold.otf");
+  src: url("fonts/SF-Pro-Display-Light.otf");
+  src: url("fonts/SF-Pro-Display-Regular.otf");
+  src: url("fonts/SF-Pro-Display-Semibolditalic.otf");
+  src: url("fonts/SF-Pro.ttf") format("truetype");
+}
+h1 {
+  font-family: "SF Pro" !important;
+  font-weight: 900 !important;
+  color: var(--text-title-color) !important;
+}
+h2 {
+  font-family: "SF Pro" !important;
+  font-weight: bold !important;
+  color: var(--text-title-color) !important;
+}
+p {
+  font-family: "SF Pro" !important;
+  color: var(--text-texts-color) !important;
+}
 .hero {
   background-image: url("../img/background/WEBSITE NATIONAL V1.1_01.png");
   width: 100%;
@@ -14,4 +37,11 @@
   background-position: center;
   position: relative;
   overflow: hidden;
+}
+
+.hero .card {
+  width: 85%;
+}
+.hero img {
+  width: 5%;
 }
