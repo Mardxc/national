@@ -15,22 +15,15 @@
   src: url("fonts/SF-Pro-Display-Semibolditalic.otf");
   src: url("fonts/SF-Pro.ttf") format("truetype");
 }
-h1 {
-  font-family: "SF Pro" !important;
-  font-weight: 900 !important;
-  color: var(--text-title-color) !important;
+* {
+  font-size: 1.2em;
 }
-h2 {
-  font-family: "SF Pro" !important;
-  font-weight: bold !important;
-  color: var(--text-title-color) !important;
+.card-transparent {
+  background: transparent !important;
+  border: none !important;
 }
-p {
-  font-family: "SF Pro" !important;
-  color: var(--text-texts-color) !important;
-}
-.hero {
-  background-image: url("../img/background/WEBSITE NATIONAL V1.1_01.png");
+.ceo {
+  background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_06.png");
   width: 100%;
   height: 900px;
   background-repeat: no-repeat;
@@ -38,10 +31,107 @@ p {
   position: relative;
   overflow: hidden;
 }
-
-.hero .card {
+.faq {
+  background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_07.png");
+  width: 100%;
+  height: 900px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.footer {
+  background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_09.png");
+  width: 100%;
+  height: 340px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.footerForm {
+  background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_08.png");
+  width: 100%;
+  height: 900px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.hardFact {
+  background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_04.png");
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.reviews {
+  background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_05.png");
+  width: 100%;
+  height: 900px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.setUp {
+  background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_02.png");
+  width: 100%;
+  height: 900px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.setUp h1 {
+  font-family: "SF Pro" !important;
+  font-weight: 900 !important;
+  color: var(--bg-secondary-color) !important;
+}
+.setUp h2 {
+  font-family: "SF Pro" !important;
+  color: var(--bg-secondary-color) !important;
+}
+.setUp .card {
   width: 85%;
 }
-.hero img {
-  width: 5%;
+.welcome {
+  background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_01.png");
+  width: 100%;
+  height: 900px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.welcome .card {
+  width: 85%;
+}
+.welcome h1 {
+  font-family: "SF Pro" !important;
+  font-weight: 900 !important;
+  color: var(--text-title-color) !important;
+}
+.welcome h2 {
+  font-family: "SF Pro" !important;
+  font-weight: bold !important;
+  color: var(--text-title-color) !important;
+}
+.welcome p {
+  font-family: "SF Pro" !important;
+  color: var(--text-texts-color) !important;
+}
+.whoWe {
+  background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_03.png");
+  width: 100%;
+  height: 900px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+nav img {
+  width: 6%;
 }
