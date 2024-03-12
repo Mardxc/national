@@ -15,7 +15,8 @@
   src: url("/fonts/SF-Pro-Display-Semibolditalic.otf");
   src: url("/fonts/SF-Pro.ttf") format("truetype");
 }
-* {
+* :not(i, .fa-brands) {
+  font-family: "SF Pro" !important;
   color: var(--text-texts-color) !important;
 }
 .btn-primary {
@@ -30,6 +31,14 @@
 .card-transparent {
   background: transparent !important;
   border: none !important;
+}
+.card-rounded {
+  -webkit-border-top-left-radius: 10% !important;
+  -webkit-border-bottom-right-radius: 10% !important;
+  -moz-border-radius-topleft: 10% !important;
+  -moz-border-radius-bottomright: 10% !important;
+  border-top-left-radius: 10% !important;
+  border-bottom-right-radius: 10% !important;
 }
 .ceo {
   background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_06.png");
@@ -61,11 +70,16 @@
 .footerForm {
   background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_08.png");
   width: 100%;
-  height: 900px;
+  height: 1050px;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
   overflow: hidden;
+}
+.footerForm h1 {
+  font-family: "SF Pro" !important;
+  font-weight: 900 !important;
+  color: var(--text-title-color) !important;
 }
 .hardFact {
   background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_04.png");
@@ -90,6 +104,11 @@
   background-position: center;
   position: relative;
   overflow: hidden;
+}
+.reviews h1 {
+  font-family: "SF Pro" !important;
+  font-weight: 900 !important;
+  color: var(--text-title-color) !important;
 }
 .rounded-card {
   border-radius: 20px !important;
@@ -170,6 +189,10 @@
   font-family: "SF Pro" !important;
   font-weight: bold !important;
   color: var(--text-title-color) !important;
+}
+nav {
+  background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_01.png");
+  background-position: top;
 }
 nav img {
   width: 6%;
