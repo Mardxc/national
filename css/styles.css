@@ -15,7 +15,7 @@
   src: url("/fonts/SF-Pro-Display-Semibolditalic.otf");
   src: url("/fonts/SF-Pro.ttf") format("truetype");
 }
-* :not(i, .fa-brands) {
+* :not(i, .fa-brands, .fa, .fa-regular) {
   font-family: "SF Pro" !important;
   color: var(--text-texts-color) !important;
 }
@@ -48,6 +48,9 @@
   background-position: center;
   position: relative;
   overflow: hidden;
+}
+.fa.fa-star, .fa-star-half-stroke{
+  color: yellow !important;
 }
 .faq {
   background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_07.png");
@@ -99,7 +102,7 @@
 .reviews {
   background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_05.png");
   width: 100%;
-  height: 900px;
+  /*height: 900px;*/
   background-repeat: no-repeat;
   background-position: center;
   position: relative;

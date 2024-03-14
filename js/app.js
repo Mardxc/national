@@ -1,21 +1,29 @@
 const ngApp = angular.module("app", []);
 
 ngApp.controller("AppController", function ($scope, $http) {
-  var employees = this;
-  getTextsLan("data/en.json");
+  var data = this;
 
-  function getTextsLan(url) {
+  $scope.getTextsLan = function (url) {
     $http({
       method: "GET",
       url: url,
     }).then(
       function (response) {
-        $scope.employees = response.data;
+        $scope.data = response.data;
       },
       function (error, status) {
         console.error("Fail to load data", status, error);
         $scope.data = {};
       }
     );
-  }
+  };
+
+  $scope.getTextsLan("data/es.json");
+});
+$(function () {
+  $(".carousel").carousel({
+    interval: 2500,
+    ride: false,
+    cycle: false,
+  });
 });

@@ -53,11 +53,19 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
           <form class="form-inline my-2 my-lg-0">
-            <button class="btn btn-link my-2 my-sm-0 text-dark" type="submit">
+            <button
+              class="btn btn-link my-2 my-sm-0 text-dark"
+              type="submit"
+              ng-click="getTextsLan('data/en.json')"
+            >
               <i class="fi fi-us" aria-hidden="true"></i>
               ENGLISH
             </button>
-            <button class="btn btn-link my-2 my-sm-0 text-dark" type="submit">
+            <button
+              class="btn btn-link my-2 my-sm-0 text-dark"
+              type="submit"
+              ng-click="getTextsLan('data/es.json')"
+            >
               <i class="fi fi-mx" aria-hidden="true"></i>
               ESPAÑOL
             </button>
@@ -68,17 +76,17 @@
         <div class="card mx-auto my-auto h-50 rounded-card" style="top: 25%">
           <div class="card-body justify-content-center d-flex-column">
             <div class="jumbotron">
-              <h1 class="display-3">INCREASE YOUR EARNINGS</h1>
-              <h2 class="p-2">HAULING WITH US</h2>
+              <h1 class="display-3">{{data.title}}</h1>
+              <h2 class="p-2">{{data.subtitle}}</h2>
               <p class="p-2">
-                2,500+ hauling opportunitiess a week.
+                {{data.content1}}
                 <br />
-                Earn up tp 92.9% of each Load, Apply in minutes.
+                {{data.content2}}
               </p>
               <p class="p-2">Join National Resources today!</p>
               <button
                 type="button"
-                class="btn btn-primary w-25 btn-lg text-white"
+                class="btn btn-primary w-25 btn-lg text-white d-none"
               >
                 SIGN UP
               </button>
@@ -118,28 +126,21 @@
         <div class="clearfix h-25"></div>
         <div class="card card-transparent w-50 my-auto">
           <div class="card-body">
-            <h1 class="p-2">WHO WE ARE</h1>
+            <h1 class="p-2">{{data.titleWhoWe}}</h1>
             <p class="p-2">
-              We drive and give meaning to work by promoting the growth of our
-              carriers.
+              {{data.contentWhoWe1}}
+              <br />
+              <br />{{data.contentWhoWe2}}
               <br />
               <br />
-              Our commitment extends to fostering continuous enhancement thorugh
-              creativity, innovation, and technology. We uphold ethical,
-              transparent, and responsible conduct, grounded in profexxional
-              expertise.
-              <br />
-              <br />
-              At National Resources we prioritize commitment to the environment
-              and society through the use of clean energy and social
-              initiatives.
+              {{data.contentWhoWe3}}
             </p>
           </div>
         </div>
         <div class="card card-transparent w-25">
           <div class="card-body">
             <button type="button" class="btn btn-outline-success btn-lg">
-              START TODAY
+              {{data.buttonWhoWe}}
             </button>
           </div>
         </div>
@@ -150,30 +151,34 @@
       >
         <div class="card card-transparent text-center">
           <div class="card-body">
-            <h1 class="card-title text-white">130,000</h1>
-            <p class="card-text text-white">YEARLY SHIPMENTS</p>
+            <h1 class="card-title text-white">{{data.hardFactShipNumber}}</h1>
+            <p class="card-text text-white">{{data.hardFactShipText}}</p>
           </div>
         </div>
         <div class="card card-transparent text-center">
           <div class="card-body">
-            <h1 class="card-title text-white">1400+</h1>
-            <p class="card-text text-white">TRUCKS</p>
+            <h1 class="card-title text-white">{{data.hardFactTrucksNumber}}</h1>
+            <p class="card-text text-white">{{data.hardFactTrucksText}}</p>
           </div>
         </div>
         <div class="card card-transparent text-center">
           <div class="card-body">
-            <h1 class="card-title text-white">1238+</h1>
-            <p class="card-text text-white">CARRIERS</p>
+            <h1 class="card-title text-white">
+              {{data.hardFactCarriersNumber}}
+            </h1>
+            <p class="card-text text-white">{{data.hardFactCarriersText}}</p>
           </div>
         </div>
         <div class="card card-transparent text-center">
           <div class="card-body">
-            <h1 class="card-title text-white">12+</h1>
-            <p class="card-text text-white">TRAILER TYPES</p>
+            <h1 class="card-title text-white">
+              {{data.hardFactTrailerNumber}}
+            </h1>
+            <p class="card-text text-white">{{data.hardFactTrailerText}}</p>
           </div>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews d-flex align-items-center">
         <div class="card card-transparent">
           <img class="card-img-top" src="holder.js/100x180/" alt="" />
           <div class="card-body text-center">
@@ -182,38 +187,227 @@
               Don't just take our world for it. Our services have received
               reviews and ratings from industry leaders.
             </p>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="card card-transparent">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <!---->
+              <div class="carousel-inner mx-auto w-75 p-5">
+                <!--Atlas-->
+                <div class="carousel-item w-50 mx-auto active">
+                  <div class="card rounded-card">
                     <div class="card-body">
-                      <h3 class="card-title">Soluciones Logísticas Completas y Eficientes</h3>
-                      <p class="card-text">National ha sido nuestro socio en logística durante el último año, y su capacidad para
-                        manejar múltiples aspectos de la cadena de suministro es asombrosa. Desde el almacenamiento hasta la
-                        distribución, su equipo ha mostrado una gran capacidad para adaptarse a nuestras necesidades
-                        cambiantes y mantener todo funcionando sin problemas.</p>
+                      <p
+                        class="card-title"
+                        style="font-weight: bold; font-size: 1.1em"
+                      >
+                        {{data.titleAtlas}}
+                      </p>
+                      <div class="text-left">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa-regular fa-star-half-stroke"></span>
+                        <span class="fa-regular fa-star"></span>
+                      </div>
+                      <p class="card-text text-left">{{data.bodyAtlas}}</p>
+                      <img
+                        src="{{data.logoAtlas}}"
+                        class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} w-50"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="..." alt="Second slide">
+                <!--Tenaris-->
+                <div class="carousel-item w-50 mx-auto">
+                  <div class="card rounded-card">
+                    <div class="card-body">
+                      <p
+                        class="card-title"
+                        style="font-weight: bold; font-size: 1.1em"
+                      >
+                        {{data.titleTenaris}}
+                      </p>
+                      <div class="text-left">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa-regular fa-star-half-stroke"></span>
+                        <span class="fa-regular fa-star"></span>
+                      </div>
+                      <p class="card-text text-left">{{data.bodyTenaris}}</p>
+                      <img
+                        src="{{data.logoTenaris}}"
+                        class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} w-50"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="..." alt="Third slide">
+                <!--Nextier-->
+                <div class="carousel-item w-50 mx-auto">
+                  <div class="card rounded-card">
+                    <div class="card-body">
+                      <p
+                        class="card-title"
+                        style="font-weight: bold; font-size: 1.1em"
+                      >
+                        {{data.titleNextier}}
+                      </p>
+                      <div class="text-left">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa-regular fa-star-half-stroke"></span>
+                        <span class="fa-regular fa-star"></span>
+                      </div>
+                      <p class="card-text text-left">{{data.bodyNextier}}</p>
+                      <img
+                        src="{{data.logoNextier}}"
+                        class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} w-50"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!--Ecostream-->
+                <div class="carousel-item w-50 mx-auto">
+                  <div class="card rounded-card">
+                    <div class="card-body">
+                      <p
+                        class="card-title"
+                        style="font-weight: bold; font-size: 1.1em"
+                      >
+                        {{data.titleEcostream}}
+                      </p>
+                      <div class="text-left">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa-regular fa-star-half-stroke"></span>
+                        <span class="fa-regular fa-star"></span>
+                      </div>
+                      <p class="card-text text-left">{{data.bodyEcostream}}</p>
+                      <img
+                        src="{{data.logoEcostream}}"
+                        class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} w-50"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!--Chevron-->
+                <div class="carousel-item w-50 mx-auto">
+                  <div class="card rounded-card">
+                    <div class="card-body">
+                      <p
+                        class="card-title"
+                        style="font-weight: bold; font-size: 1.1em"
+                      >
+                        {{data.titleChevron}}
+                      </p>
+                      <div class="text-left">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa-regular fa-star-half-stroke"></span>
+                        <span class="fa-regular fa-star"></span>
+                      </div>
+                      <p class="card-text text-left">{{data.bodyChevron}}</p>
+                      <img
+                        src="{{data.logoChevron}}"
+                        class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} w-50"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!--Oxy-->
+                <div class="carousel-item w-50 mx-auto">
+                  <div class="card rounded-card">
+                    <div class="card-body">
+                      <p
+                        class="card-title"
+                        style="font-weight: bold; font-size: 1.1em"
+                      >
+                        {{data.titleOxy}}
+                      </p>
+                      <div class="text-left">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa-regular fa-star-half-stroke"></span>
+                        <span class="fa-regular fa-star"></span>
+                      </div>
+                      <p class="card-text text-left">{{data.bodyOxy}}</p>
+                      <img
+                        src="{{data.logoOxy}}"
+                        class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} w-50"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!--Filamar-->
+                <div class="carousel-item w-50 mx-auto">
+                  <div class="card rounded-card">
+                    <div class="card-body">
+                      <p
+                        class="card-title"
+                        style="font-weight: bold; font-size: 1.1em"
+                      >
+                        {{data.titleFilamar}}
+                      </p>
+                      <div class="text-left">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa-regular fa-star-half-stroke"></span>
+                        <span class="fa-regular fa-star"></span>
+                      </div>
+                      <p class="card-text text-left">{{data.bodyFilamar}}</p>
+                      <img
+                        src="{{data.logoFilamar}}"
+                        class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} w-50"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+              <!---->
               <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="2"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="3"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="4"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="5"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="6"
+                ></li>
               </ol>
             </div>
           </div>
@@ -307,7 +501,6 @@
       </section>
     </div>
   </body>
-  <script src="js/app.js"></script>
   <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -323,4 +516,5 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"
   ></script>
+  <script src="js/app.js"></script>
 </html>
