@@ -61,6 +61,11 @@
   position: relative;
   overflow: hidden;
 }
+.faq h1 {
+  font-family: "SF Pro" !important;
+  font-weight: 900 !important;
+  color: var(--text-title-color) !important;
+}
 .footer {
   background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_09.png");
   width: 100%;
