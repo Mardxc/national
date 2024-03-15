@@ -20,6 +20,29 @@
   font-family: "SF Pro" !important;
   color: var(--text-texts-color) !important;
 }
+#accordianId .card-header .ng-binding:after {
+  font-family: "FontAwesome";
+  content: "\f068";
+  color: var(--secondary-color) !important;
+  font-weight: bold !important;
+  float: right;
+}
+#accordianId .card-header .collapsed:after {
+  font-family: "FontAwesome";
+  color: var(--secondary-color) !important;
+  font-weight: bold !important;
+  content: "\f067";
+  float: right;
+}
+#accordianId .card-header a {
+  color: var(--secondary-color) !important;
+  font-family: "SF Pro" !important;
+  font-weight: bold !important;
+}
+#accordianId .card-body {
+  font-family: "SF Pro" !important;
+  font-style: italic !important;
+}
 .btn-primary {
   background: rgb(69, 132, 114) !important;
   background: linear-gradient(
@@ -28,6 +51,10 @@
     rgba(56, 116, 83, 1) 35%,
     rgba(30, 64, 45, 1) 100%
   ) !important;
+}
+.card-header h5 a {
+  color: var(--text-title-color) !important;
+  font-family: "SF Pro" !important;
 }
 .card-transparent {
   background: transparent !important;
@@ -44,7 +71,7 @@
 .ceo {
   background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_06.png");
   width: 100%;
-  height: 900px;
+  height: 75vh;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -73,6 +100,15 @@
   content: url("../img/quotes/2.png");
   float: inline-end;
 }
+.custom-item {
+  width: 50% !important;
+}
+.custom-item img {
+  max-width: 230px;
+  max-height: 95px;
+  width: auto;
+  height: auto;
+}
 .fa.fa-star,
 .fa-star-half-stroke {
   color: yellow !important;
@@ -80,7 +116,6 @@
 .faq {
   background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_07.png");
   width: 100%;
-  height: 900px;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -100,7 +135,6 @@
 .footer {
   background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_09.png");
   width: 100%;
-  height: 340px;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -109,7 +143,6 @@
 .footerForm {
   background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_08.png");
   width: 100%;
-  height: 1050px;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -123,7 +156,6 @@
 .hardFact {
   background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_04.png");
   width: 100%;
-  height: 250px;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -138,7 +170,7 @@
 .reviews {
   background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_05.png");
   width: 100%;
-  /*height: 900px;*/
+  height: 850px;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -160,7 +192,6 @@
 .setUp {
   background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_02.png");
   width: 100%;
-  /*height: 900px;*/
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -189,7 +220,12 @@
   overflow: hidden;
 }
 .welcome .card {
+  top: 25%;
   width: 85%;
+}
+.welcome .shadow-card {
+  right: 10%;
+  top: 1%;
 }
 .welcome h1 {
   font-family: "SF Pro" !important;
@@ -208,7 +244,7 @@
 .whoWe {
   background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_03.png");
   width: 100%;
-  height: 900px;
+  height: 75vh;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -235,4 +271,28 @@ nav {
 }
 nav img {
   width: 6%;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .footerForm .card {
+    width: 100vw !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footerForm .card {
+    width: 50vw !important;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  html {
+    zoom: 130%;
+  }
 }

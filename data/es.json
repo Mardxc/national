@@ -9,6 +9,8 @@
   "contentWhoWe2": "Nuestro compromiso se extiende a fomentar la mejora continua a través de lacreatividad, la innovación y la tecnología. Mantenemos una conducta ética,transparente y responsable, basada en la experiencia profesional.",
   "contentWhoWe3": "En National Resources priorizamos el compromiso con el medio ambiente y la sociedadmediante el uso de energía limpia e iniciativas sociales",
   "buttonWhoWe": "Comienza hoy",
+  "setUpTitle":"Proceso",
+  "setUpSubtitle":"Configuración del Transportista",
   "setUpStep1": "img/steps/español/paso_01.png",
   "setUpStep2": "img/steps/español/paso_02.png",
   "setUpStep3": "img/steps/español/paso_03.png",
@@ -42,6 +44,8 @@
   "faqQResponse6": "Manejamos programas de mantenimiento de seguridad como lo es el GPS, Dashcam, pre-trip, post-trip, logbook and time sheet.",
   "faqQuestion7": "¿Tienen diferentes opciones de trabajo?",
   "faqQResponse7": "Si, manejamos mass de 12 trailers (hopper, dumper, vacuum water truck, flat bed, dry ban, etc).",
+  "reviewTitle": "RECOMMENDED BY EXPERTS",
+  "reviewSubTitle": "Don't just take our world for it. Our services have received reviews and ratings from industry leaders.",
   "caruselTitle": "titulo",
   "titleNextier": "Soluciones Logísticas Completas y Eficientes",
   "bodyNextier": "National ha sido nuestro socio en logística durante el último año, y su capacidad para manejar múltiples aspectos de la cadena de suministro es asombrosa. Desde el almacenamiento hasta la distribución, su equipo ha mostrado una gran capacidad para adaptarse a nuestras necesidades cambiantes y mantener todo funcionando sin problemas.",
@@ -63,5 +67,6 @@
   "logoOxy": "img/logos/oxy.png",
   "titleFilamar": "Eficiencia y Precisión en el Transporte de Arena Mojada para Frac",
   "bodyFilamar": "National ha sido un socio excepcional en el desafiante transporte de arena mojada parafracturamiento hidráulico. Su equipo demostró profesionalidad y eficiencia desde la recogida hasta laentrega. Admiramos su capacidad para adaptar métodos y garantizar la calidad de la arena,manteniendo la puntualidad y la seguridad en todo momento. Recomendaríamos a National a cualquierempresa en la industria del petróleo y gas que busque un transporte fiable y experto para operaciones defracturamiento",
-  "logoFilamar": "img/logos/filamar.png"
+  "logoFilamar": "img/logos/filamar.png",
+  "schedule":"Abierto de 8:00 a.m. a 5:00 p.m. los 365 días del año."
 }

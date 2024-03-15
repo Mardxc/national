@@ -18,7 +18,7 @@ ngApp.controller("AppController", function ($scope, $http) {
     );
   };
 
-  $scope.getTextsLan("data/es.json");
+  $scope.getTextsLan("data/en.json");
 });
 $(function () {
   $(".carousel").carousel({
