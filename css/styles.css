@@ -5,6 +5,7 @@
   --bg-secondary-color: #ffffff;
   --text-title-color: #1e402d;
   --text-texts-color: #353535;
+  --quotes-color: #442424;
 }
 @font-face {
   font-family: "SF Pro";
@@ -49,7 +50,31 @@
   position: relative;
   overflow: hidden;
 }
-.fa.fa-star, .fa-star-half-stroke{
+.ceo h1 {
+  font-family: "SF Pro" !important;
+  font-weight: 900 !important;
+  font-size: xxx-large;
+  color: var(--text-title-color) !important;
+}
+.ceo h2 {
+  font-family: "SF Pro" !important;
+  font-size: xx-large;
+  color: var(--text-title-color) !important;
+}
+.ceo p {
+  font-family: "SF Pro" !important;
+  font-size: x-large;
+  color: var(--text-text-color) !important;
+}
+.ceo p::before {
+  content: url("../img/quotes/1.png");
+}
+.ceo p::after {
+  content: url("../img/quotes/2.png");
+  float: inline-end;
+}
+.fa.fa-star,
+.fa-star-half-stroke {
   color: yellow !important;
 }
 .faq {
@@ -64,6 +89,12 @@
 .faq h1 {
   font-family: "SF Pro" !important;
   font-weight: 900 !important;
+  font-size: xxx-large;
+  color: var(--text-title-color) !important;
+}
+.faq h2 {
+  font-family: "SF Pro" !important;
+  font-size: xx-large;
   color: var(--text-title-color) !important;
 }
 .footer {
@@ -129,7 +160,7 @@
 .setUp {
   background-image: url("../img/background/WEBSITE-NATIONAL-V1.1_02.png");
   width: 100%;
-  height: 900px;
+  /*height: 900px;*/
   background-repeat: no-repeat;
   background-position: center;
   position: relative;

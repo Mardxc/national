@@ -115,19 +115,20 @@
         </div>
       </section>
       <section class="setUp">
-        <div class="card card-transparent mx-auto py-5">
-          <div class="card-body">
+        <div class="card card-transparent mx-auto py-5 justify-content-center">
+          <div class="card-body justify-content-center">
             <h1>Carrier</h1>
             <h2>Set Up Process</h2>
           </div>
           <div class="row justify-content-center">
-            <img src="{{data.setUpStep1}}" class="col-sm-4 col-lg-2" alt="">
-            <img src="{{data.setUpStep2}}" class="col-sm-4 col-lg-2" alt="">
-            <img src="{{data.setUpStep3}}" class="col-sm-4 col-lg-2" alt="">
-            <img src="{{data.setUpStep4}}" class="col-sm-4 col-lg-2" alt="">
-            <img src="{{data.setUpStep5}}" class="col-sm-4 col-lg-2" alt="">
+            <img src="{{data.setUpStep1}}" class="col-sm-4 col-lg-2" alt="" />
+            <img src="{{data.setUpStep2}}" class="col-sm-4 col-lg-2" alt="" />
+            <img src="{{data.setUpStep3}}" class="col-sm-4 col-lg-2" alt="" />
+            <img src="{{data.setUpStep4}}" class="col-sm-4 col-lg-2" alt="" />
+            <img src="{{data.setUpStep5}}" class="col-sm-4 col-lg-2" alt="" />
           </div>
         </div>
+        <br>
       </section>
       <section class="whoWe d-flex-column">
         <div class="clearfix h-25"></div>
@@ -187,7 +188,6 @@
       </section>
       <section class="reviews d-flex align-items-center">
         <div class="card card-transparent">
-          <img class="card-img-top" src="holder.js/100x180/" alt="" />
           <div class="card-body text-center">
             <h1 class="card-title">RECOMMENDED BY EXPERTS</h1>
             <p class="card-text">
@@ -200,7 +200,7 @@
               data-ride="carousel"
             >
               <!---->
-              <div class="carousel-inner mx-auto w-75 p-5">
+              <div class="carousel-inner mx-auto p-5">
                 <!--Atlas-->
                 <div class="carousel-item w-50 mx-auto active">
                   <div class="card rounded-card">
@@ -420,7 +420,15 @@
           </div>
         </div>
       </section>
-      <section class="ceo"></section>
+      <section class="ceo mx-auto d-flex align-items-center">
+        <div class="card card-transparent mx-auto py-5">
+          <div class="card-body">
+            <h2>{{data.ceoTitle}}</h2>
+            <h1>{{data.ceoSubtitle}}</h1>
+            <p class="card-text w-50">{{data.ceoMessage}}</p>
+          </div>
+        </div>
+      </section>
       <section class="faq">
         <div class="card card-transparent mx-auto py-5">
           <div class="card-body">
