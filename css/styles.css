@@ -274,18 +274,70 @@ nav img {
 }
 
 @media (min-width: 576px) {
+
 }
 
 @media (min-width: 768px) {
+  .welcome {
+    height: auto !important;
+    padding-bottom: 1vh;
+  }
+  .welcome .card {
+    top: 0%;
+    width: 80vw;
+  }
+  .welcome .shadow-card {
+    right: 0%;
+    top: 0%;
+    margin: auto !important;
+    position: relative !important;
+    width: 80vw !important;
+  }
+  .footerForm .card {
+    width: 100vw !important;
+  }
+  section {
+    height: auto !important;
+  }
 }
 
 @media (min-width: 992px) {
+  .welcome {
+    height: auto !important;
+    padding-bottom: 1vh;
+  }
+  .welcome .card {
+    top: 0%;
+    width: 80vw;
+  }
+  .welcome .shadow-card {
+    right: 0%;
+    top: 0%;
+    margin: auto !important;
+    position: relative !important;
+    width: 80vw !important;
+  }
   .footerForm .card {
     width: 100vw !important;
   }
 }
 
 @media (min-width: 1200px) {
+  .welcome {
+    height: auto !important;
+    padding-bottom: 1vh;
+  }
+  .welcome .card {
+    top: 0%;
+    width: 80vw;
+  }
+  .welcome .shadow-card {
+    right: 0%;
+    top: 0%;
+    margin: auto !important;
+    position: relative !important;
+    width: 80vw !important;
+  }
   .footerForm .card {
     width: 50vw !important;
   }
